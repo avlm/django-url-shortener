@@ -15,4 +15,6 @@ python manage.py runserver
 
 Se deu tudo certo o site deve estar funcionando em http://127.0.0.1:8000
 
+Para testar e ver funcionando sem precisar dos passos acima é só acessar http://avlm.pythonanywhere.com/
+
 :)
