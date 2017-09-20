@@ -1,0 +1,18 @@
+{% extends 'avlm/base_template.html' %}
+
+{% block content %}
+    <div class="page-header text-center">
+        <h1>Short your URL here.</h1>
+    </div>
+    {% if success %}
+        <div class="alert alert-success text-center" role="alert">Url Shortened! Here it is: <a href="/{{ url_hash }}">{{ short_url }}</a></div>
+    {% endif %}
+    <form method="post" class="text-center">
+        {% csrf_token %}
+
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-success">Get Shortened URL!</button>
+    </form>
+
+
+{% endblock %}

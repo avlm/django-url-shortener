@@ -1,0 +1,15 @@
+{% extends 'avlm/base_template.html' %}
+
+{% block content %}
+    <div class="page-header text-center">
+        <h1>Login.</h1>
+    </div>
+    <form class="col-md-8 col-md-offset-4" method="POST">
+        <div class="col-md-10 col-md-offset-1">
+            {% csrf_token %}
+
+            {{ form.as_p }}
+        </div>
+        <button class="btn btn-success col-md-2 col-md-offset-3" type='submit'>Login</button>
+    </form>
+{% endblock %}

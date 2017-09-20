@@ -1,0 +1,28 @@
+{% extends 'avlm/base_template.html' %}
+
+{% load staticfiles %}
+
+{% block content %}
+    <div class="page-header text-center">
+        <h1>A simple and open source URL shortener, made with Django.</h1>
+    </div>
+    <p class="lead text-center">Follow these steps and be happy! :)</p>
+
+    <div class="row">
+        <div class="how-to col-lg-4 animated bounceInLeft">
+            <img class="img-circle" src="{% static 'img/register-today.jpg' %}" alt="Generic placeholder image" width="140" height="140">
+            <h2>Sign up and Login!</h2>
+            <p>Necessary for you to shorten your links.</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="how-to col-lg-4 animated bounceInUp">
+            <img class="img-circle" src="{% static 'img/if_lock_318582.png' %}" alt="Generic placeholder image" width="140" height="140">
+            <h2>Paste the link!</h2>
+            <p>Paste or type any link you want.</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="how-to col-lg-4 animated bounceInRight">
+            <img class="img-circle" src="{% static 'img/if_sign-check_299110.png' %}" alt="Generic placeholder image" width="140" height="140">
+            <h2>Share!</h2>
+            <p>Get your shortened link and share with everyone.</p>
+        </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+{% endblock %}
