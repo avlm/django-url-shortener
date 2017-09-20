@@ -33,7 +33,7 @@ def sign_up(request):
 
             if form.is_valid():
                 form.save()
-                return HttpResponseRedirect('/sign_in')
+                return HttpResponseRedirect('/login')
             else:
                 return render(request, 'avlm/sign_up.html', {'form': form})
 
