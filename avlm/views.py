@@ -68,7 +68,7 @@ def shortener(request):
 
                 return render(request, 'avlm/shortener.html', {
                     'form': ShortURLForm(),
-                    'success': True, 'short_url': HOSTNAME+'/'+short_url.url_hash, 'url_hash': short_url.url_hash})
+                    'success': True, 'short_url': 'http://avlm.pythonanywhere.com'+'/'+short_url.url_hash, 'url_hash': short_url.url_hash})
         else:
             form = ShortURLForm()
 
